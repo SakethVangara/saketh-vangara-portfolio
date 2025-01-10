@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saketh Vangara's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/142afd3b4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Student at University of Virginia</p>
+            <h1>My Name is <span>Saketh Vangara</span>.<br> Welcome to My Website!</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------------ABOUT SECTION----------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Hi! My name is Saketh Vangara, and I am a second year student
+                    at the University of Virginia. I am studying
+                    Computer Science and Applied Statistics, and am currently seeking
+                    opportunities in either fields of study. My fondness for these
+                    two techinal areas grew through high school, where I would often
+                    enjoy coding and problem-solving, with the intent of finding 
+                    a real-world application of the knowledge I garnered.
+                    <br>
+                    <br>
+                    Through the intersection of Computer Science and Statistics, I hope
+                    to gain a more detailed perspective that can enhance my skillset in the
+                    evergrowing technological world, as I am grateful for any opportunities
+                    that I can be a part of.
+                </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Java, Python, JavaScript, JavaFX, HTML, CSS, TypeScript, R, C, x86-64 Assembly, SQL</li>
+                        <li><span>Artificial Intelligence</span><br>CUDA, PyCharm, PyTorch, YOLOv5</li>
+                        <li><span>UI/UX</span><br>Figma, PyQt5, Qt Designer</li>
+                        <li><span>Integrated Development Environments</span><br>IntelliJ IDEA, PyCharm, Visual Studio Code, Jupyter Notebooks, Sublime Text, R-Studio</li>
+                        <li><span>Tools</span><br>AWS (Amazon S3), Git, GitHub, Git BASH, Gradle, Power BI, Microsoft Excel</li>
+                    
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>September 2024 - Current</span><br>Undergraduate Research Intern at UVA's Sports Analytics and Statistics Lab</li>
+                        <li><span>May 2024 - August 2024</span><br>Code and Generative AI Quality Rater at Outlier AI</li>
+                        <li><span>June 2022 - January 2023</span><br>Software Development Intern at Kashmir World Foundation</li>
+                        <li><span>June 2020 - August 2020</span><br>Virtual Tutor at NEST4US</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>August 2023 - May 2027</span><br>University of Virginia</li>
+                        <li><span>August 2020 - June 2023</span><br>Lightridge High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>YouTube API Data Analysis</h3>
+                    <p>In this project, I wrote a program that allows users to collect various statistics
+                        from a YouTube channel and conduct an exploratory data analysis.
+                        I implemented the YouTube API (REST API) in Python, primarily using the numpy and nltk packages
+                        for data analysis and natural language processing.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Assessing Premier League Valuations</h3>
+                    <p>This was a multiple linear regression analysis conducted to study age, position, minutes played overall, and other variables to determine which would be
+                        significant predictors of a player's valuation following the 2018-2019 
+                        Premier League season.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>GeoScan Desktop App UI Sample</h3>
+                    <p>This is a sample of the UI made during the development of the GeoScan Desktop App, which is 
+                        intended to identify and maintain a count of specific endangered 
+                        species from camera-trap data. It was built using Figma, PyQt5, 
+                        and Qt Designer.
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Galaga Game Recreation</h3>
+                    <p>This is a scaled recreation of the original Galaga,
+                        a fixed-shooter game where the objective is for the
+                        user to defeat all the enemies without losing all
+                        of their lives and/or running out of time. It was implemented using
+                        Python and the UVA Game Engine library (UVAGE).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------contact-------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> ssc2ry@virginia.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i> (703) 342-6784</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/saketh-vangara/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/SakethVangara"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Saketh Vangara - Official Resume January 2025 copy.pdf" download class="btn btn2">Download Résumé</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name ="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Saketh Vangara. Made with <i class="fa-solid fa-heart"></i> by GreatStack</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbxbqh-fw3JC8Ho3Mbiwq9txK_hv6bcxKzdLY-XQwZZO0Ua9dkQVZ74v3IcNopi5HHwS/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
